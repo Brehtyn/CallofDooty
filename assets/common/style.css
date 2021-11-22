@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: pageHeader;
-  src:url(assets/PrintClearly_TT.ttf);
+  font-family: DM_Sans;
+  src:url(DMSansr.ttf);
 }
 
 :root {
@@ -11,8 +11,8 @@
 
   --color-neutral: #f5f5f5;
 
-  --ff-primary: 'Roboto', "Open Sans", sans-serif;
-  --ff-accent: 'pageHeader', 'serif';
+  --ff-primary: 'DM_Sans', sans-serif;
+
   --ff-color: #7E8597;
 
 }
@@ -35,7 +35,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--ff-accent);
+  font-family: var(--ff-primary);
   color: #fff;
   font-weight: 800;
 }
@@ -45,12 +45,26 @@ a, ul {
   list-style: none;
 }
 
+.button {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  background: blue;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
 .bg-primary {
   background-color: var(--color-primary);
 }
 
 .bg-secondary {
   background-color: var(--color-secondary);
+}
+
+.text-centered {
+  text-align: center;
 }
 
 #fancy-dash {
@@ -119,6 +133,8 @@ footer {
 }
 
 .icon_background {
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
   width: 50px;
   height: 50px;
   background-image: url(../icon_backgroud.png);
@@ -130,9 +146,8 @@ footer {
   width: 30px;
   height: 30px;
   margin: calc(50% - 15px) 0 0 calc(50% - 15px);
-  -webkit-filter: drop-shadow(2px 2px 2px rgb(255, 255, 255));
-  filter: drop-shadow(2px 2px 2px rgb(255, 255, 255));
-
+  -webkit-filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
+  filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
 }
 
 .img_flex_container {
