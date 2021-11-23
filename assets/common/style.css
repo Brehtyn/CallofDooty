@@ -9,7 +9,7 @@
   --color-primary:#141A25;
   --color-secondary:#1D2B3C;
 
-  --color-neutral: #f5f5f5;
+  --color-neutral: rgb(56, 56, 56);
 
   --ff-primary: 'DM_Sans', sans-serif;
 
@@ -37,23 +37,70 @@ p {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--ff-primary);
   color: #fff;
-  font-weight: 800;
+  font-weight: 500;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+
+h1 {
+  font-weight: 600;
 }
 
 a, ul { 
   text-decoration: none;
   list-style: none;
+  color: var(--ff-color);
 }
 
-.button {
+.text-centered {
+  text-align: center;
+}
+
+.button, .quote_button {
   display: inline-block;
-  padding: 0.5rem 2rem;
+  padding: .8rem 3rem;
+  justify-self: center;
   border-radius: 15px;
   background: blue;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
 }
+.quote_button {
+  background: var(--color-neutral);
+  border-radius: 10px;
+  padding: 1rem 6rem;
+  margin-bottom: 10px;
+}
+
+.goto-button::after {
+  content: "→";
+}
+
+.flex_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon_background {
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  width: 50px;
+  height: 50px;
+  background-image: url(../icon_backgroud.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.icon_centered {
+  width: 30px;
+  height: 30px;
+  margin: calc(50% - 15px) 0 0 calc(50% - 15px);
+  -webkit-filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
+  filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
+}
+
 
 .bg-primary {
   background-color: var(--color-primary);
@@ -63,8 +110,12 @@ a, ul {
   background-color: var(--color-secondary);
 }
 
-.text-centered {
-  text-align: center;
+.picture {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
 #fancy-dash {
@@ -88,14 +139,14 @@ body {
 }
 
 header {
+  padding-top: 5vh;
 }
 
 section {
   margin: 0 auto;
   max-width: 1400px;
-  padding: 4rem;
+  padding: 3rem 5rem;
 }
-
 section > h1,
 section > h2,
 section > h3,
@@ -105,15 +156,39 @@ section > p {
 
 footer {
   padding: 4rem;
+  margin-top: 6vh;
+  flex-wrap: wrap;
+}
+footer > div > div > p {
+  font-size: .8rem;
+  padding-left: 2rem;
 }
 
-.flex_container {
+#header_container {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  margin-top: -50px;
 }
-
-.flex_container > div {
+#header_container > div > h1 {
+  padding: 2rem 0;
+  margin-top: 50px;
+}
+#header_container > div > div {
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 25px;
+  font-size: 1.2rem;
+}
+#header_container > div > div > div:first-of-type {
+  padding-right: 25px;
+}
+#header_container > div > div > div > p:last-of-type {
+  font-size: .8rem;
+  padding-top: 5px;
+}
+ 
+.cards > div {
   padding: 2.4rem;
   margin-top: 20px;
   border-radius: 35px;
@@ -121,45 +196,60 @@ footer {
   width: 450px;
   min-height: 230px;
 }
-
-.flex_container > div:not(:first-child) {
+.cards > div:not(:first-child) {
   margin-left: 25px;
 }
-
-.flex_container > div > h3 {
+.cards > div > h3,
+.cards > div > div > h3 {
   font-size: 1.5rem;
   font-weight: 800;
   margin: 0.8rem 0;
 }
-
-.icon_background {
-  margin: 0 auto;
-  margin-bottom: 1.5rem;
-  width: 50px;
-  height: 50px;
-  background-image: url(../icon_backgroud.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+.cards > div > div > hr {
+  border-color: var(--color-neutral);
+}
+.cards > div > div > ul {
+  list-style-type: decimal;
+  text-align: left;
+}
+.cards > div > div > ul > li {
+  padding: 5px;
 }
 
-.icon_centered {
-  width: 30px;
-  height: 30px;
-  margin: calc(50% - 15px) 0 0 calc(50% - 15px);
-  -webkit-filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
-  filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
-}
-
-.img_flex_container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.img_flexwrap_container {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
-.img_flex_container > a > img {
+.img_flexwrap_container > a > img {
   width: 100px;
   height: 100px;
   margin: 0.5rem;
+}
+
+.service_banner {
+  padding: 2rem;
+  border-radius: 25px;
+}
+.service_banner > div > h2 {
+  padding-bottom: 50px;
+  letter-spacing: normal;
+}
+.service_banner > div {
+  width: 45%;
+}
+.service_banner > div > ul {
+  list-style-type: disc;
+}
+.service_banner > div:nth-child(2) {
+  padding: 1rem;
+  margin-left: 7%;
+}
+
+#sales-caption {
+  color: orangered;
+  font-size: 1rem;
+}
+#price-tags {
+  padding-top: 15px;
+  color: white;
 }
