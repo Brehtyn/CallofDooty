@@ -29,6 +29,10 @@ p {
   margin: 0;
   padding: 0;
 }
+button {
+  cursor: pointer;
+  border: none;
+}
 
 p {
   color: var(--ff-color);
@@ -40,6 +44,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 550;
   font-size: 2.5rem;
   letter-spacing: 1px;
+}
+@media screen and (min-width: 500px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 499px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.9rem;
+  }
 }
 
 a, ul { 
@@ -56,7 +70,7 @@ a, ul {
   margin: 0 auto !important;
 }
 
-.button, .quote_button {
+button, .button, .quote_button {
   display: inline-block;
   padding: .8rem 3rem;
   margin: 1rem 0;
@@ -80,7 +94,6 @@ a, ul {
 
 .flex_container {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
@@ -143,14 +156,71 @@ header {
 
 section {
   margin: 0 auto;
-  max-width: 1400px;
-  padding: 4rem 6rem;
+}
+@media screen and (min-width: 650px) {
+  section {
+    max-width: 1400px;
+    padding: 4rem 6rem;
+  }
+}
+@media screen and (max-width: 649px) {
+  section {
+    padding: 1rem 3rem;
+  }
 }
 section > h1,
 section > h2,
 section > h3,
 section > p {
   margin: 2rem 0;
+}
+ 
+@media screen and (min-width: 1100px) {
+  #mobile_header_image { display: none; }
+  #header_container > div > div {
+    margin: 2rem 50px 2rem 0;
+    padding: 2rem;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 1099px) and (min-width: 420px) {
+  #title_image {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  #desktop_header_image { display: none; }
+  #mobile_header_image { 
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+  #header_container > div > div {
+    margin: 1rem auto;
+    margin-bottom: 0;
+    padding: 2rem;
+    border-radius: 25px;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 419px) {
+  #title_image {
+    width: 100%;
+  }
+  #desktop_header_image { display: none; }
+  #mobile_header_image { 
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+  #header_container > div > div {
+    margin: 1rem auto;
+    margin-bottom: 0;
+    padding: 1rem;
+    border-radius: 25px;
+    font-size: 1.2rem;
+  }
 }
 
 #header_container {
@@ -163,13 +233,6 @@ section > p {
   padding: 2rem 0;
   margin-top: 50px;
 }
-#header_container > div > div {
-  margin: 2rem 50px 2rem 0;
-  padding: 2rem;
-  border-radius: 25px;
-  font-size: 1.2rem;
-  max-width: 600px;
-}
 #header_container > div > div > div:first-of-type {
   padding-right: 25px;
 }
@@ -177,17 +240,28 @@ section > p {
   font-size: .8rem;
   padding-top: 5px;
 }
- 
+
+@media screen and (min-width: 1350px) {
+  .cards {
+    width: 450px;
+    flex-direction: row !important;
+  }
+  .cards > div:not(:first-child) {
+    margin-left: 25px;
+  }
+}
+@media screen and (max-width: 1349px) {
+  .cards {
+    width: 100%;
+    flex-direction: column !important;
+  }
+}
 .cards > div {
   padding: 2.4rem;
   margin-top: 20px;
   border-radius: 35px;
   font-size: 1.15rem;
-  width: 450px;
   min-height: 250px;
-}
-.cards > div:not(:first-child) {
-  margin-left: 25px;
 }
 .cards > div > h3,
 .cards > div > div > h3 {
@@ -221,8 +295,28 @@ section > p {
   margin: 0.5rem;
 }
 
+@media screen and (min-width: 900px) {
+  .service_banner {
+    padding: 2rem;
+  }
+  .service_banner > div {
+    width: 45%;
+  }
+  .service_banner > div:nth-child(2) {
+    padding: 1rem;
+    margin-left: 7%;
+  }
+}
+@media screen and (max-width: 899px) {
+  .service_banner {
+    padding: 1rem;
+    flex-direction: column-reverse;
+  }
+  .service_banner > div:nth-child(2) {
+    padding: 1rem;
+  }
+}
 .service_banner {
-  padding: 2rem;
   border-radius: 25px;
   align-self: center;
 }
@@ -230,17 +324,28 @@ section > p {
   padding-bottom: 50px;
   letter-spacing: normal;
 }
-.service_banner > div {
-  width: 45%;
-}
 .service_banner > div > ul {
   list-style-type: disc;
 }
-.service_banner > div:nth-child(2) {
-  padding: 1rem;
-  margin-left: 7%;
-}
 
+@media screen and (min-width: 1100px) {
+  .social_banner {
+    flex-direction: row;
+  }
+  .social_banner > div {
+    width: 50%;
+    margin-left: 6%;
+  }
+}
+@media screen and (max-width: 1099px) {
+  .social_banner {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .social_banner > div > a{
+    margin: 0 2rem !important;
+  }
+}
 .social_banner {
   border-radius: 25px;
   align-self: center;
@@ -256,19 +361,18 @@ section > p {
 .social_banner > div:first-of-type > img {
   background-color: black;
 }
-.social_banner > div {
-  width: 50%;
-  margin-left: 6%;
-}
-.social_banner > div:nth-child(1) > *:not(:first-child) {
-  margin: 2rem;
-}
 .social_banner > div:nth-child(1) > *:first-child {
   margin: 0 0 0 2rem;
 }
 .social_banner > div:nth-child(2) {
   padding-top: 50px;
   margin-bottom: -10px;
+}
+.social_banner > div:nth-child(2) > img {
+  width: 100%;
+}
+.social_banner > div:nth-child(1) > *:not(:first-child) {
+  margin: 2rem;
 }
 
 #sales-caption {
@@ -282,12 +386,51 @@ section > p {
 #blocked-text {
   color: var(--color-neutral);
 }
+#popular_service {
+  border-style: solid;
+  border-width: 2px;
+  border-color: orange;
+  position: relative;
+}
+#popular_tag {
+  position: absolute;
+  display: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 12px;
+  font-weight: 600px;
+  color:white;
+  text-transform: uppercase;
+  background-color: red;
+  border-radius: 25px;
+  padding: 5px 25px;
+}
 
+@media screen and (min-width: 1030px) {
+  footer > div:first-of-type > div > p {
+    padding: 0 45% 0 2rem;
+  }
+}
+@media screen and (max-width: 1030px) and (min-width: 775px) {
+  footer > div:first-of-type > div > p {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 774px) {
+  footer > div {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  footer > div > div:first-of-type > a > img:first-of-type {
+    width: 100%;
+    padding: 0 4rem;
+  }
+  footer > div > div:first-of-type {
+    padding-bottom: 30px;
+  }
+} 
 footer {
   font-size: .8rem;
-}
-footer > div:first-of-type > div > p {
-  padding: 0 45% 0 2rem;
 }
 .footer_bottom {
   margin: 1rem 0;
@@ -297,5 +440,5 @@ footer > div:first-of-type > div > p {
   justify-content: space-between;
 }
 .footer_bottom > div > a {
-  padding: 0 1rem;
-}
+  padding-left:10px;
+}  

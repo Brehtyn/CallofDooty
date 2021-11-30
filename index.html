@@ -19,16 +19,19 @@
 
 </head>
 
-<script>
-
-</script>
+<script src="common.js"> </script>
 
 <body>
   <header>
     <section>
-      
-      <img src="assets/call_of_dooty.png" alt="Call of Dooty's title text.">
-      
+
+      <img id="title_image" src="assets/call_of_dooty.png" alt="Call of Dooty's title text.">
+
+      <div id="mobile_header_image">
+        <img class="picture" src="assets/call_of_dooty_man.png"
+          alt="Call of Dooty's Logo in front of a battlefield scene, reminiscent of a videogame poster.">
+      </div>
+
       <div id="header_container">
         <div>
           <h1> Your plumbing backup is here. </h1>
@@ -43,8 +46,7 @@
             </div>
           </div>
         </div>
-
-        <div>
+        <div id="desktop_header_image">
           <img class="picture" src="assets/call_of_dooty_man.png"
             alt="Call of Dooty's Logo in front of a battlefield scene, reminiscent of a videogame poster.">
         </div>
@@ -56,7 +58,7 @@
   <section>
 
     <h2> No battle is too difficult for <br> Call of Dooty.</h2>
-    <p> Call of Dooty can handle any and all plumbing needs, business or residential. </p>
+    <p> Call of Dooty can handle any and all plumbing needs: business or residential. </p>
     <div class="cards flex_container">
       <div class="bg-primary">
         <div class="icon_background">
@@ -119,7 +121,7 @@
       </div>
       <div>
         <h2 class="text-centered"> Plumbing Service </h2>
-        <p>Our men can repair or replace :</p>
+        <p>Our men can repair or replace:</p>
         <ul>
           <li>Water Leaks</li>
           <li>Toilets</li>
@@ -166,13 +168,13 @@
 
       <div class="bg-primary">
         <div class="icon_background margin-centered">
-        <img src="assets/carrot.png" class="icon_centered" alt="Seed Icon (looks awfully carrot-like.">
+          <img src="assets/carrot.png" class="icon_centered" alt="Seed Icon (looks awfully carrot-like.">
         </div>
         <div class="text-centered">
           <h3> Basic </h3>
           <p> Will cover most needs and basic repair services. </p>
           <p id="price-tags"> $00 - $000 </p>
-          <hr> 
+          <hr>
           <ul>
             <li> Basic Plumbing </li>
             <li> Repair / Replacement </li>
@@ -185,15 +187,16 @@
         </div>
       </div>
 
-      <div class="bg-primary">
+      <div class="bg-primary" id="popular_service">
         <div class="icon_background margin-centered">
           <img src="assets/leaf.png" class="icon_centered" alt="Tree Icon">
         </div>
+        <div id="popular_tag"> Popular </div>
         <div class="text-centered">
           <h3> Pro </h3>
           <p> The best service money can buy, everything covered. </p>
           <p id="price-tags"> $000 - $0000 </p>
-          <hr> 
+          <hr>
           <ul>
             <li> Basic Plumbing </li>
             <li> Repair / Replacement </li>
@@ -214,7 +217,7 @@
           <h3> Business </h3>
           <p> Suitable for small & enterprise business needs. </p>
           <p id="price-tags"> $00000 </p>
-          <hr> 
+          <hr>
           <ul>
             <li> Basic Plumbing </li>
             <li> Repair / Replacement </li>
@@ -226,37 +229,41 @@
           <p> No credit card required. </p>
         </div>
       </div>
-      
+
     </div>
   </section>
 
-  <section> 
-  <footer>
-    <div class="flex_container">
-      <div>
-        <img src="assets/call_of_dooty.png" width="300px" alt="Call of Dooty's title text.">
+  <section>
+    <footer>
+      <div class="flex_container">
+        <div>
+          <a href="index.html">
+            <img src="assets/call_of_dooty.png" width="300px" alt="Call of Dooty's title text.">
+          </a>
+        </div>
+        <div>
+          <p> Call of Dooty is no way affiliated or associated with or endorsed nor approved by Call of Duty
+            or any of its affiliates or parent company Activision Blizzard Inc. </p>
+          </p>
+        </div>
       </div>
-      <div>
-        <p> Call of Dooty is no way affiliated or associated with or endorsed nor approved by Call of Duty
-          or any of its affiliates or parent company Activision Blizzard Inc. </p>
-        </p>
+      <hr>
+      <div class="footer_bottom">
+        <div>
+          <p> © Call of Dooty. All Rights Reserved 2021 | <a href="https://ibigital.com/"> Created by Bigital
+            </a> </p>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/callofdootylv/"> <img src="assets/instagram_icon.png" width="25px"
+              alt="Instagram"> </a>
+          <a href="https://www.instagram.com/callofdootylv/"> <img src="assets/instagram_icon.png" width="25px"
+              alt="Instagram"> </a>
+          <a href="https://www.instagram.com/callofdootylv/"> <img src="assets/instagram_icon.png" width="25px"
+              alt="Instagram"> </a>
+        </div>
       </div>
-    </div>
-    <hr>
-    <div class="footer_bottom">
-      <div>
-        <p> © Call of Dooty. All Rights Reserved 2021 | <a href="https://ibigital.com/"> Created by Bigital
-          </a> </p>
-      </div>
-      <div>
-        <a href="https://www.instagram.com/callofdootylv/"> <img src="assets/instagram_icon.png" width="25px" alt="Instagram"> </a>
-        <a href="https://www.instagram.com/callofdootylv/"> <img src="assets/instagram_icon.png" width="25px" alt="Instagram"> </a>
-        <a href="https://www.instagram.com/callofdootylv/"> <img src="assets/instagram_icon.png" width="25px" alt="Instagram"> </a>
-      </div>
-    </div>
-  </footer>
-</section>
-
+    </footer>
+  </section>
 
 </body>
 
