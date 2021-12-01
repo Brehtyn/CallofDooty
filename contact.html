@@ -32,27 +32,36 @@
   </section>
 
   <section class="bg-primary">
-    
     <h1> Contact Form </h1>
-
     <p>Our plumbers are professional and diligent, but working the front lines is hard work! Please be considerate of what you write to our "troops". </p>
+ </section>
 
-    <div class="form-popup border_primary" id="contactForm">
-      <form name="generalcontactform" method="post" class="form-container" action="forms/contactForm.php">
-        <span class="text_align_center"> Contact Form</span>
+  <section>
+    <div class="form" id="contactForm">
+      <form name="generalcontactform" method="post" class="flex_container bg-primary" action="forms/contactForm.php">
         <span> Name: </span>
-        <input type="text" class="private_form" name="name" placeholder="Joey Doe">
+        <input type="text" class="private_form" name="name" placeholder="John Doe">
         <span> Phone Number: </span>
-        <input type="tel" class="private_form" name="phone" placeholder="(928)123-1234">
+        <input type="tel" class="private_form" name="phone" placeholder="(702)123-1234">
         <span> Email: </span>
         <input type="email" class="private_form" name="email" placeholder="example@email.com">
+        <span> Service Level: </span>
+        <div> 
+        <input type="radio" id="basic" name="service" value="Basic">
+        <label for="basic" >Basic </label><br>
+        <input type="radio" id="pro" name="service" value="Pro">
+        <label for="pro"> Pro </label><br>
+        <input type="radio" id="business" name="service" value="Business">
+        <label for="business"> Business </label><br>
+        <input type="radio" id="other" name="service" value="Other">
+        <label for="other"> Other </label>
+        </div>
         <span> Comment(s): </span>
         <textarea type="text" class="private_form" name="message" placeholder=""> </textarea>
         <div class="g-recaptcha" data-sitekey="6LeWyj8dAAAAAIiKUs5ne310wQjrC0cuB1fhgENs"></div>
         <button class="border_primary open_cursor" type="submit" value="Send Form" onclick="return validateForm()"> Submit </button>
       </form>
     </div>
-
   </section>
 
   <section>
