@@ -1,0 +1,13 @@
+
+---
+    deployment:
+        tasks:
+            - export DEPLOYPATH=/home/callofdooty/public_html/
+            - /bin/cp index.html $DEPLOYPATH
+            - /bin/cp contact.html $DEPLOYPATH
+            - /bin/cp robots.txt $DEPLOYPATH
+            - /bin/cp sitemap.txt $DEPLOYPATH
+            - /bin/cp license.txt $DEPLOYPATH
+            - /bin/cp common.js $DEPLOYPATH
+            - /bin/cp -R forms $DEPLOYPATH
+            - /bin/cp -R assets $DEPLOYPATH
