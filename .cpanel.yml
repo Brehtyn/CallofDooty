@@ -2,7 +2,7 @@
 ---
     deployment:
         tasks:
-            - export DEPLOYPATH=/home/callofdooty/public_html/
+            - export DEPLOYPATH=/home/bgitcallofdooty/public_html/
             - /bin/cp index.html $DEPLOYPATH
             - /bin/cp contact.html $DEPLOYPATH
             - /bin/cp robots.txt $DEPLOYPATH
