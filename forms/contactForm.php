@@ -1,16 +1,17 @@
 <?php
 
-$name = $_POST['name'];
-$phone = $_POST['phone'];
-$visitor_email = $_POST['email'];
-$message = $_POST['message'];
-$url='https://www.example.org/';
+$name = $_POST[htmlspecialchars('name')];
+$phone = $_POST[htmlspecialchars('phone')];
+$visitor_email = $_POST[htmlspecialchars('email')];
+$message = $_POST[htmlspecialchars('message')];
 
-$email_from = "admin@example.org";
+$site_url='http://callofdooty702.com/';
 
-$to = "example.com";
+$email_from = "admin@callofdooty702.com/";
 
-$email_subject = "Contact Form from example.org";
+$to = "admin@ibigital.com";
+
+$email_subject = "Contact Form from CallofDooty702.com";
 
 $headers = "From: $email_from \r\n";
 
@@ -20,12 +21,12 @@ $email_body = "You have received a new message from $name (email $visitor_email)
 
 mail($to,$email_subject,$email_body,$headers);
 
-echo '<META HTTP-EQUIV=REFRESH CONTENT="1; '.$url.'">';
+echo '<META HTTP-EQUIV=REFRESH CONTENT="15; '.$site_url.'">';
 
 echo "<h1> FORM SENT SUCCESS! </h1>";
 
-echo "Thank you " .$name. ", if your browser doesnt automatically redirect you please ";
+echo "Thank you " .$name. ", if your browser doesn't automatically redirect you in 30 seconds please ";
 
-echo "<a href='".$url."'>CLICKHERE.</a>";
+echo "<a href='".$site_url."'>CLICKHERE.</a>";
 
 ?>

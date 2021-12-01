@@ -37,16 +37,21 @@
 
     <p>Our plumbers are professional and diligent, but working the front lines is hard work! Please be considerate of what you write to our "troops". </p>
 
-    <div >
-     
-      <p> 
-
-
-      </p>
-
+    <div class="form-popup border_primary" id="contactForm">
+      <form name="generalcontactform" method="post" class="form-container" action="forms/contactForm.php">
+        <span class="text_align_center"> Contact Form</span>
+        <span> Name: </span>
+        <input type="text" class="private_form" name="name" placeholder="Joey Doe">
+        <span> Phone Number: </span>
+        <input type="tel" class="private_form" name="phone" placeholder="(928)123-1234">
+        <span> Email: </span>
+        <input type="email" class="private_form" name="email" placeholder="example@email.com">
+        <span> Comment(s): </span>
+        <textarea type="text" class="private_form" name="message" placeholder=""> </textarea>
+        <div class="g-recaptcha" data-sitekey="6LeWyj8dAAAAAIiKUs5ne310wQjrC0cuB1fhgENs"></div>
+        <button class="border_primary open_cursor" type="submit" value="Send Form" onclick="return validateForm()"> Submit </button>
+      </form>
     </div>
-
-    <button> Submit </button> 
 
   </section>
 
