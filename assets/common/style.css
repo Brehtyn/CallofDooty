@@ -359,6 +359,7 @@ section > p {
   }
   .social_banner > div > a{
     margin: 0 2rem !important;
+    text-align: center;
   }
   .social_banner > div:nth-child(2) > img {
     width: 100%;
@@ -383,6 +384,7 @@ section > p {
   margin: 0 0 0 2rem;
 }
 .social_banner > div:nth-child(2) {
+  padding: 0 1rem;
   padding-top: 50px;
   margin-bottom: -10px;
 }
@@ -464,14 +466,24 @@ footer {
   padding-left:10px;
 }  
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 600px) {
+  .form > form {
+    padding: 2rem 8rem;
+  }
+}
+@media screen and (max-width: 599px) and (min-width: 420px) {
   .form > form {
     padding: 2rem 4rem;
   }
 }
-@media screen and (max-width: 419px) {
+@media screen and (max-width: 419px) and (min-width: 380px) {
   .form > form {
-    padding: 2rem 1rem;
+    padding: 2rem 3rem;
+  }
+}
+@media screen and (max-width: 379px)  {
+  .form > form {
+    padding: 2rem 1.1rem;
   }
 }
 .form > form {
