@@ -396,20 +396,16 @@ section > p {
   color: orangered;
   font-size: 1rem;
 }
-#price-tags {
-  padding-top: 15px;
-  color: white;
-}
 #blocked-text {
   color: var(--color-neutral);
 }
-#popular_service {
+#popular-service {
   border-style: solid;
   border-width: 2px;
   border-color: orange;
   position: relative;
 }
-#popular_tag {
+#popular-tag {
   position: absolute;
   display: fixed;
   top: 20px;
@@ -421,6 +417,9 @@ section > p {
   background-color: red;
   border-radius: 25px;
   padding: 5px 25px;
+}
+#temp-hidden {
+  display: none;
 }
 
 @media screen and (min-width: 1030px) {
