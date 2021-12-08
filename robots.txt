@@ -1,5 +1,5 @@
 
-Sitemap: http:/callofdooty702.com/sitemap.txt
+Sitemap: https://callofdooty702.com/sitemap.txt
 
 User-agent: *
 Disallow: /contactForm.php
