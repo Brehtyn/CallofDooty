@@ -1,6 +1,6 @@
-<?xml version="1.0" standalone="yes"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
-<path style="fill:#010101; stroke:none;" d="M0 0L0 24L11 24L11 21L4 21L6 14L1 14L6 2L9 2L10 5L15 5L16 2L19 2L24 14L19 14L21 21L14 21L14 24L25 24L25 0L0 0z"/>
-<path style="fill:#ffffff; stroke:none;" d="M6 2L1 14L6 14L4 21L11 24L14 24L14 21L21 21L19 14L24 14L19 2L16 2L15 5L10 5L9 2L6 2z"/>
-<path style="fill:#010101; stroke:none;" d="M7 6L5 12C8.32834 11.0222 8.87783 8.84119 7 6M17 6C16.6109 9.26126 16.689 11.0273 20 12L17 6M12 8L8 19L17 19L12 8z"/>
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.5625 13H2.5L7.5 3L10.4 8.8001" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.4376 13H22.5001L17.5001 3L14.6001 8.8001" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.5 20H5.5L12.5 4L19.5 20Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.5 20V23" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
