@@ -1,4 +1,4 @@
-# ![Logo](assets/common/favicon.ico?raw=true) Basic Website Skeleton
+# ![Logo](assets/common/favicon.ico?raw=true) Call of Dooty
 
 Professional plumbing website for Call of Dooty 702.
 
