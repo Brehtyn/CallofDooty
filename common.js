@@ -14,6 +14,11 @@ function validateForm() {
     alert("Please provide your email address.");
     return false;
   }
+  var k = document.forms["generalcontactform"]["service"].value;
+  if (k == "") {
+    alert("Please include your desired service.");
+    return false;
+  }
   var k = document.forms["generalcontactform"]["message"].value;
   if (k == "") {
     alert("Please include your desired comment.");
