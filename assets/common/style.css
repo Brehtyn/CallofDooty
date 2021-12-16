@@ -241,6 +241,26 @@ section > p {
   padding-top: 5px;
 }
 
+#testimony-container {
+  animation: testimony-container ease-out 4.2s both;
+  animation-iteration-count: infinite;
+}
+@keyframes testimony-container {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
 @media screen and (min-width: 1350px) {
   .cards > div{
     width: 450px;
