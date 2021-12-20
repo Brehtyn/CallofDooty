@@ -31,7 +31,7 @@ function testimony_slideshow_counter_auto_increase() {        // scroll right on
 }
 
 if (testimony_slideshow_autoscroll == true) {                 // autoscroll testimony slideshow
-  setInterval(testimony_slideshow_counter_auto_increase, 4200);
+  setInterval(testimony_slideshow_counter_auto_increase, 5200);
 }
 else {
 }
