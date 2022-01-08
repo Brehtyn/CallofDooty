@@ -519,17 +519,17 @@ footer {
     padding: 2rem 8rem;
   }
 }
-@media screen and (max-width: 599px) and (min-width: 420px) {
+@media screen and (max-width: 599px) and (min-width: 460px) {
+  form {
+    padding: 2rem 6rem;
+  }
+}
+@media screen and (max-width: 459px) and (min-width: 370px) {
   form {
     padding: 2rem 4rem;
   }
 }
-@media screen and (max-width: 419px) and (min-width: 380px) {
-  form {
-    padding: 2rem 3rem;
-  }
-}
-@media screen and (max-width: 379px)  {
+@media screen and (max-width: 369px)  {
   form {
     padding: 2rem 1.1rem;
   }
