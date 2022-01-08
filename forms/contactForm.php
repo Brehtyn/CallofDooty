@@ -10,7 +10,7 @@ $site_url='http://callofdooty702.com/';
 
 $email_from = "admin@callofdooty702.com/";
 
-$to = array("admin@ibigital.com","brentyn@ibigital.com");
+$to = "admin@ibigital.com, brentyn@ibigital.com";
 
 $email_subject = "Contact Form from CallofDooty702.com";
 
